@@ -1,0 +1,59 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+  text-align: center;
+}
+
+header, footer {
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.perfil-card {
+  background: #fff;
+  max-width: 350px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.perfil-card img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.perfil-card ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
+.perfil-card li {
+  cursor: pointer;
+}
+
+.perfil-card li:hover {
+  color: #0077cc;
+  text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .perfil-card {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
